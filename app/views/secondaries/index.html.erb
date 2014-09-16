@@ -1,138 +1,142 @@
-<h1>Listing secondaries</h1>
-
-<table>
+<%- model_class = Secondary -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => Secondary %></h1>
+</div>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Workorganization</th>
-      <th>Cmt1</th>
-      <th>Followupsystem</th>
-      <th>Cmt2</th>
-      <th>Measuringprogram</th>
-      <th>Cmt3</th>
-      <th>Quailtyculture</th>
-      <th>Cmt4</th>
-      <th>Messegesystem</th>
-      <th>Cmt5</th>
-      <th>Studentshonoring</th>
-      <th>Cmt6</th>
-      <th>Teachershonoring</th>
-      <th>Cmt7</th>
-      <th>Schoolboard</th>
-      <th>Cmt8</th>
-      <th>Selfevaluation</th>
-      <th>Cmt9</th>
-      <th>Schoolapplying</th>
-      <th>Cmt10</th>
-      <th>Oneteamspirit</th>
-      <th>Cmt11</th>
-      <th>Otherschooltwin</th>
-      <th>Cmt12</th>
-      <th>Requiredworkcompletion</th>
-      <th>Cmt13</th>
-      <th>Noorprogramcompletion</th>
-      <th>Cmt14</th>
-      <th>Takamolcompletion</th>
-      <th>Cmt15</th>
-      <th>Schoolweb</th>
-      <th>Cmt16</th>
-      <th>Classenvironment</th>
-      <th>Cmt17</th>
-      <th>Schoolfacilities</th>
-      <th>Cmt18</th>
-      <th>Schoolcafeteria</th>
-      <th>Cmt19</th>
-      <th>Healthpromoting</th>
-      <th>Cmt20</th>
-      <th>Walltexting</th>
-      <th>Cmt21</th>
-      <th>Schoolactivities</th>
-      <th>Cmt22</th>
-      <th>Islamicawareness</th>
-      <th>Cmt23</th>
-      <th>Proceduralplan</th>
-      <th>Cmt24</th>
-      <th>Proceduralsystemic</th>
-      <th>Cmt25</th>
-      <th>Proceduralsystemic2</th>
-      <th>Cmt26</th>
-      <th>Teacherinout</th>
-      <th>Cmt27</th>
-      <th>Waitingclasses</th>
-      <th>Cmt28</th>
-      <th>Morningsupervision</th>
-      <th>Cmt29</th>
-      <th>Schooltable</th>
-      <th>Cmt30</th>
-      <th>Attendancepercentage</th>
-      <th>Cmt31</th>
-      <th>Writtenpreparation</th>
-      <th>Cmt32</th>
-      <th>Ratingrecords</th>
-      <th>Cmt33</th>
-      <th>Activitiesbook</th>
-      <th>Cmt34</th>
-      <th>Editorialbusiness</th>
-      <th>Cmt35</th>
-      <th>Visitingteachers</th>
-      <th>Cmt36</th>
-      <th>Teachingaidsusage</th>
-      <th>Cmt37</th>
-      <th>Commissionguidance</th>
-      <th>Cmt38</th>
-      <th>Enrichmentprogram</th>
-      <th>Cmt39</th>
-      <th>Schoolplan</th>
-      <th>Cmt40</th>
-      <th>Trainingprograms</th>
-      <th>Cmt41</th>
-      <th>Techemploying</th>
-      <th>Cmt42</th>
-      <th>Richmentprogramdev</th>
-      <th>Cmt43</th>
-      <th>Teachingnewstrategy</th>
-      <th>Cmt44</th>
-      <th>Learningresource</th>
-      <th>Cmt45</th>
-      <th>Headmasterpermission</th>
-      <th>Cmt46</th>
-      <th>Creativeapproaches</th>
-      <th>Cmt47</th>
-      <th>Schoolinitiative</th>
-      <th>Cmt48</th>
-      <th>Achievementfile</th>
-      <th>Cmt49</th>
-      <th>Examssystems</th>
-      <th>Cmt50</th>
-      <th>Qeiyasschoollevel</th>
-      <th>Cmt51</th>
-      <th>Cmt52</th>
-      <th>Studentsinawards</th>
-      <th>Studentsoutawards</th>
-      <th>Cmt53</th>
-      <th>Safetycoordinator</th>
-      <th>Cmt54</th>
-      <th>Teachertraining</th>
-      <th>Cmt55</th>
-      <th>Buildingsafety</th>
-      <th>Cmt56</th>
-      <th>Evacuationexperment</th>
-      <th>Cmt57</th>
-      <th>Fireextinguishers</th>
-      <th>Cmt58</th>
-      <th>Emergencyexit</th>
-      <th>Cmt59</th>
-      <th>Alarm</th>
-      <th>Cmt60</th>
-      <th>Safetymethods</th>
-      <th>Cmt61</th>
-      <th>Sum</th>
-      <th colspan="3"></th>
+      <th>ID</th>
+      <th><%= model_class.human_attribute_name(:workorganization) %></th>
+      <th><%= model_class.human_attribute_name(:cmt1) %></th>
+      <th><%= model_class.human_attribute_name(:followupsystem) %></th>
+      <th><%= model_class.human_attribute_name(:cmt2) %></th>
+      <th><%= model_class.human_attribute_name(:measuringprogram) %></th>
+      <th><%= model_class.human_attribute_name(:cmt3) %></th>
+      <th><%= model_class.human_attribute_name(:quailtyculture) %></th>
+      <th><%= model_class.human_attribute_name(:cmt4) %></th>
+      <th><%= model_class.human_attribute_name(:messegesystem) %></th>
+      <th><%= model_class.human_attribute_name(:cmt5) %></th>
+      <th><%= model_class.human_attribute_name(:studentshonoring) %></th>
+      <th><%= model_class.human_attribute_name(:cmt6) %></th>
+      <th><%= model_class.human_attribute_name(:teachershonoring) %></th>
+      <th><%= model_class.human_attribute_name(:cmt7) %></th>
+      <th><%= model_class.human_attribute_name(:schoolboard) %></th>
+      <th><%= model_class.human_attribute_name(:cmt8) %></th>
+      <th><%= model_class.human_attribute_name(:selfevaluation) %></th>
+      <th><%= model_class.human_attribute_name(:cmt9) %></th>
+      <th><%= model_class.human_attribute_name(:schoolapplying) %></th>
+      <th><%= model_class.human_attribute_name(:cmt10) %></th>
+      <th><%= model_class.human_attribute_name(:oneteamspirit) %></th>
+      <th><%= model_class.human_attribute_name(:cmt11) %></th>
+      <th><%= model_class.human_attribute_name(:otherschooltwin) %></th>
+      <th><%= model_class.human_attribute_name(:cmt12) %></th>
+      <th><%= model_class.human_attribute_name(:requiredworkcompletion) %></th>
+      <th><%= model_class.human_attribute_name(:cmt13) %></th>
+      <th><%= model_class.human_attribute_name(:noorprogramcompletion) %></th>
+      <th><%= model_class.human_attribute_name(:cmt14) %></th>
+      <th><%= model_class.human_attribute_name(:takamolcompletion) %></th>
+      <th><%= model_class.human_attribute_name(:cmt15) %></th>
+      <th><%= model_class.human_attribute_name(:schoolweb) %></th>
+      <th><%= model_class.human_attribute_name(:cmt16) %></th>
+      <th><%= model_class.human_attribute_name(:classenvironment) %></th>
+      <th><%= model_class.human_attribute_name(:cmt17) %></th>
+      <th><%= model_class.human_attribute_name(:schoolfacilities) %></th>
+      <th><%= model_class.human_attribute_name(:cmt18) %></th>
+      <th><%= model_class.human_attribute_name(:schoolcafeteria) %></th>
+      <th><%= model_class.human_attribute_name(:cmt19) %></th>
+      <th><%= model_class.human_attribute_name(:healthpromoting) %></th>
+      <th><%= model_class.human_attribute_name(:cmt20) %></th>
+      <th><%= model_class.human_attribute_name(:walltexting) %></th>
+      <th><%= model_class.human_attribute_name(:cmt21) %></th>
+      <th><%= model_class.human_attribute_name(:schoolactivities) %></th>
+      <th><%= model_class.human_attribute_name(:cmt22) %></th>
+      <th><%= model_class.human_attribute_name(:islamicawareness) %></th>
+      <th><%= model_class.human_attribute_name(:cmt23) %></th>
+      <th><%= model_class.human_attribute_name(:proceduralplan) %></th>
+      <th><%= model_class.human_attribute_name(:cmt24) %></th>
+      <th><%= model_class.human_attribute_name(:proceduralsystemic) %></th>
+      <th><%= model_class.human_attribute_name(:cmt25) %></th>
+      <th><%= model_class.human_attribute_name(:proceduralsystemic2) %></th>
+      <th><%= model_class.human_attribute_name(:cmt26) %></th>
+      <th><%= model_class.human_attribute_name(:teacherinout) %></th>
+      <th><%= model_class.human_attribute_name(:cmt27) %></th>
+      <th><%= model_class.human_attribute_name(:waitingclasses) %></th>
+      <th><%= model_class.human_attribute_name(:cmt28) %></th>
+      <th><%= model_class.human_attribute_name(:morningsupervision) %></th>
+      <th><%= model_class.human_attribute_name(:cmt29) %></th>
+      <th><%= model_class.human_attribute_name(:schooltable) %></th>
+      <th><%= model_class.human_attribute_name(:cmt30) %></th>
+      <th><%= model_class.human_attribute_name(:attendancepercentage) %></th>
+      <th><%= model_class.human_attribute_name(:cmt31) %></th>
+      <th><%= model_class.human_attribute_name(:writtenpreparation) %></th>
+      <th><%= model_class.human_attribute_name(:cmt32) %></th>
+      <th><%= model_class.human_attribute_name(:ratingrecords) %></th>
+      <th><%= model_class.human_attribute_name(:cmt33) %></th>
+      <th><%= model_class.human_attribute_name(:activitiesbook) %></th>
+      <th><%= model_class.human_attribute_name(:cmt34) %></th>
+      <th><%= model_class.human_attribute_name(:editorialbusiness) %></th>
+      <th><%= model_class.human_attribute_name(:cmt35) %></th>
+      <th><%= model_class.human_attribute_name(:visitingteachers) %></th>
+      <th><%= model_class.human_attribute_name(:cmt36) %></th>
+      <th><%= model_class.human_attribute_name(:teachingaidsusage) %></th>
+      <th><%= model_class.human_attribute_name(:cmt37) %></th>
+      <th><%= model_class.human_attribute_name(:commissionguidance) %></th>
+      <th><%= model_class.human_attribute_name(:cmt38) %></th>
+      <th><%= model_class.human_attribute_name(:enrichmentprogram) %></th>
+      <th><%= model_class.human_attribute_name(:cmt39) %></th>
+      <th><%= model_class.human_attribute_name(:schoolplan) %></th>
+      <th><%= model_class.human_attribute_name(:cmt40) %></th>
+      <th><%= model_class.human_attribute_name(:trainingprograms) %></th>
+      <th><%= model_class.human_attribute_name(:cmt41) %></th>
+      <th><%= model_class.human_attribute_name(:techemploying) %></th>
+      <th><%= model_class.human_attribute_name(:cmt42) %></th>
+      <th><%= model_class.human_attribute_name(:richmentprogramdev) %></th>
+      <th><%= model_class.human_attribute_name(:cmt43) %></th>
+      <th><%= model_class.human_attribute_name(:teachingnewstrategy) %></th>
+      <th><%= model_class.human_attribute_name(:cmt44) %></th>
+      <th><%= model_class.human_attribute_name(:learningresource) %></th>
+      <th><%= model_class.human_attribute_name(:cmt45) %></th>
+      <th><%= model_class.human_attribute_name(:headmasterpermission) %></th>
+      <th><%= model_class.human_attribute_name(:cmt46) %></th>
+      <th><%= model_class.human_attribute_name(:creativeapproaches) %></th>
+      <th><%= model_class.human_attribute_name(:cmt47) %></th>
+      <th><%= model_class.human_attribute_name(:schoolinitiative) %></th>
+      <th><%= model_class.human_attribute_name(:cmt48) %></th>
+      <th><%= model_class.human_attribute_name(:achievementfile) %></th>
+      <th><%= model_class.human_attribute_name(:cmt49) %></th>
+      <th><%= model_class.human_attribute_name(:examssystems) %></th>
+      <th><%= model_class.human_attribute_name(:cmt50) %></th>
+      <th><%= model_class.human_attribute_name(:qeiyasschoollevel) %></th>
+      <th><%= model_class.human_attribute_name(:cmt51) %></th>
+      <th><%= model_class.human_attribute_name(:cmt52) %></th>
+      <th><%= model_class.human_attribute_name(:studentsinawards) %></th>
+      <th><%= model_class.human_attribute_name(:studentsoutawards) %></th>
+      <th><%= model_class.human_attribute_name(:cmt53) %></th>
+      <th><%= model_class.human_attribute_name(:safetycoordinator) %></th>
+      <th><%= model_class.human_attribute_name(:cmt54) %></th>
+      <th><%= model_class.human_attribute_name(:teachertraining) %></th>
+      <th><%= model_class.human_attribute_name(:cmt55) %></th>
+      <th><%= model_class.human_attribute_name(:buildingsafety) %></th>
+      <th><%= model_class.human_attribute_name(:cmt56) %></th>
+      <th><%= model_class.human_attribute_name(:evacuationexperment) %></th>
+      <th><%= model_class.human_attribute_name(:cmt57) %></th>
+      <th><%= model_class.human_attribute_name(:fireextinguishers) %></th>
+      <th><%= model_class.human_attribute_name(:cmt58) %></th>
+      <th><%= model_class.human_attribute_name(:emergencyexit) %></th>
+      <th><%= model_class.human_attribute_name(:cmt59) %></th>
+      <th><%= model_class.human_attribute_name(:alarm) %></th>
+      <th><%= model_class.human_attribute_name(:cmt60) %></th>
+      <th><%= model_class.human_attribute_name(:safetymethods) %></th>
+      <th><%= model_class.human_attribute_name(:cmt61) %></th>
+      <th><%= model_class.human_attribute_name(:sum) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-
   <tbody>
     <% @secondaries.each do |secondary| %>
       <tr>
+        <td><%= secondary.id %></td>
         <td><%= secondary.workorganization %></td>
         <td><%= secondary.cmt1 %></td>
         <td><%= secondary.followupsystem %></td>
@@ -256,14 +260,21 @@
         <td><%= secondary.safetymethods %></td>
         <td><%= secondary.cmt61 %></td>
         <td><%= secondary.sum %></td>
-        <td><%= link_to 'Show', secondary %></td>
-        <td><%= link_to 'Edit', edit_secondary_path(secondary) %></td>
-        <td><%= link_to 'Destroy', secondary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%=l secondary.created_at, format: :long %></td>
+        <td>
+          <%= link_to secondary_path(secondary), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.show')) }" do %>
+            <%= glyph 'info-sign' %>
+            <%= glyph 'pencil' %>
+          <%- end -%>
+          <%= link_to secondary_path(secondary), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
+            <%= glyph 'remove' %>
+          <%- end -%>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Secondary', new_secondary_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_secondary_path,
+            :class => 'btn btn-primary' %>
