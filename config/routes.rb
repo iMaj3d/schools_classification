@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :primaries
+
   resources :intermediates
 
   resources :secondaries
