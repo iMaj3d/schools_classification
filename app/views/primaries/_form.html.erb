@@ -1,133 +1,748 @@
-<%= simple_form_for(@primary) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :workorganization %>
-    <%= f.input :cmt1 %>
-    <%= f.input :followupsystem %>
-    <%= f.input :cmt2 %>
-    <%= f.input :measuringprogram %>
-    <%= f.input :cmt3 %>
-    <%= f.input :quailtyculture %>
-    <%= f.input :cmt4 %>
-    <%= f.input :messegesystem %>
-    <%= f.input :cmt5 %>
-    <%= f.input :studentshonoring %>
-    <%= f.input :cmt6 %>
-    <%= f.input :teachershonoring %>
-    <%= f.input :cmt7 %>
-    <%= f.input :schoolboard %>
-    <%= f.input :cmt8 %>
-    <%= f.input :selfevaluation %>
-    <%= f.input :cmt9 %>
-    <%= f.input :schoolapplying %>
-    <%= f.input :cmt10 %>
-    <%= f.input :oneteamspirit %>
-    <%= f.input :cmt11 %>
-    <%= f.input :otherschooltwin %>
-    <%= f.input :cmt12 %>
-    <%= f.input :requiredworkcompletion %>
-    <%= f.input :cmt13 %>
-    <%= f.input :noorprogramcompletion %>
-    <%= f.input :cmt14 %>
-    <%= f.input :takamolcompletion %>
-    <%= f.input :cmt15 %>
-    <%= f.input :schoolweb %>
-    <%= f.input :cmt16 %>
-    <%= f.input :classenvironment %>
-    <%= f.input :cmt17 %>
-    <%= f.input :schoolfacilities %>
-    <%= f.input :cmt18 %>
-    <%= f.input :schoolcafeteria %>
-    <%= f.input :cmt19 %>
-    <%= f.input :healthpromoting %>
-    <%= f.input :cmt20 %>
-    <%= f.input :walltexting %>
-    <%= f.input :cmt21 %>
-    <%= f.input :schoolactivities %>
-    <%= f.input :cmt22 %>
-    <%= f.input :islamicawareness %>
-    <%= f.input :cmt23 %>
-    <%= f.input :proceduralplan %>
-    <%= f.input :cmt24 %>
-    <%= f.input :proceduralsystemic %>
-    <%= f.input :cmt25 %>
-    <%= f.input :proceduralsystemic2 %>
-    <%= f.input :cmt26 %>
-    <%= f.input :teacherinout %>
-    <%= f.input :cmt27 %>
-    <%= f.input :waitingclasses %>
-    <%= f.input :cmt28 %>
-    <%= f.input :morningsupervision %>
-    <%= f.input :cmt29 %>
-    <%= f.input :schooltable %>
-    <%= f.input :cmt30 %>
-    <%= f.input :attendancepercentage %>
-    <%= f.input :cmt31 %>
-    <%= f.input :writtenpreparation %>
-    <%= f.input :cmt32 %>
-    <%= f.input :ratingrecords %>
-    <%= f.input :cmt33 %>
-    <%= f.input :activitiesbook %>
-    <%= f.input :cmt34 %>
-    <%= f.input :editorialbusiness %>
-    <%= f.input :cmt35 %>
-    <%= f.input :visitingteachers %>
-    <%= f.input :cmt36 %>
-    <%= f.input :teachingaidsusage %>
-    <%= f.input :cmt37 %>
-    <%= f.input :commissionguidance %>
-    <%= f.input :cmt38 %>
-    <%= f.input :enrichmentprogram %>
-    <%= f.input :cmt39 %>
-    <%= f.input :schoolplan %>
-    <%= f.input :cmt40 %>
-    <%= f.input :trainingprograms %>
-    <%= f.input :cmt41 %>
-    <%= f.input :techemploying %>
-    <%= f.input :cmt42 %>
-    <%= f.input :richmentprogramdev %>
-    <%= f.input :cmt43 %>
-    <%= f.input :teachingnewstrategy %>
-    <%= f.input :cmt44 %>
-    <%= f.input :learningresource %>
-    <%= f.input :cmt45 %>
-    <%= f.input :headmasterpermission %>
-    <%= f.input :cmt46 %>
-    <%= f.input :creativeapproaches %>
-    <%= f.input :cmt47 %>
-    <%= f.input :schoolinitiative %>
-    <%= f.input :cmt48 %>
-    <%= f.input :achievementfile %>
-    <%= f.input :cmt49 %>
-    <%= f.input :examssystems %>
-    <%= f.input :cmt50 %>
-    <%= f.input :achievementexams %>
-    <%= f.input :cmt51 %>
-    <%= f.input :studentsinawards %>
-    <%= f.input :cmt52 %>
-    <%= f.input :studentsoutawards %>
-    <%= f.input :cmt53 %>
-    <%= f.input :safetycoordinator %>
-    <%= f.input :cmt54 %>
-    <%= f.input :teachertraining %>
-    <%= f.input :cmt55 %>
-    <%= f.input :buildingsafety %>
-    <%= f.input :cmt56 %>
-    <%= f.input :evacuationexperment %>
-    <%= f.input :cmt57 %>
-    <%= f.input :fireextinguishers %>
-    <%= f.input :cmt58 %>
-    <%= f.input :emergencyexit %>
-    <%= f.input :cmt59 %>
-    <%= f.input :alarm %>
-    <%= f.input :cmt60 %>
-    <%= f.input :safetymethods %>
-    <%= f.input :cmt61 %>
-    <%= f.input :sum %>
+<%= form_for @primary, :html => { :class => 'form-horizontal form-model' } do |f| %>
+  <div class="form-group">
+    <%= f.label :workorganization, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :workorganization, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt1, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt1, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :followupsystem, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :followupsystem, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt2, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt2, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :measuringprogram, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :measuringprogram, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt3, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt3, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :quailtyculture, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :quailtyculture, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt4, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt4, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :messegesystem, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :messegesystem, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt5, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt5, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :studentshonoring, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :studentshonoring, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt6, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt6, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :teachershonoring, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :teachershonoring, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt7, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt7, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :schoolboard, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :schoolboard, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt8, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt8, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :selfevaluation, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :selfevaluation, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt9, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt9, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :schoolapplying, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :schoolapplying, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt10, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt10, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :oneteamspirit, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :oneteamspirit, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt11, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt11, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :otherschooltwin, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :otherschooltwin, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt12, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt12, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :requiredworkcompletion, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :requiredworkcompletion, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt13, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt13, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :noorprogramcompletion, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :noorprogramcompletion, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt14, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt14, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :takamolcompletion, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :takamolcompletion, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt15, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt15, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :schoolweb, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :schoolweb, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt16, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt16, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :classenvironment, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :classenvironment, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt17, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt17, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :schoolfacilities, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :schoolfacilities, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt18, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt18, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :schoolcafeteria, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :schoolcafeteria, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt19, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt19, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :healthpromoting, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :healthpromoting, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt20, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt20, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :walltexting, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :walltexting, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt21, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt21, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :schoolactivities, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :schoolactivities, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt22, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt22, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :islamicawareness, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :islamicawareness, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt23, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt23, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :proceduralplan, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :proceduralplan, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt24, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt24, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :proceduralsystemic, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :proceduralsystemic, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt25, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt25, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :proceduralsystemic2, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :proceduralsystemic2, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt26, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt26, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :teacherinout, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :teacherinout, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt27, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt27, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :waitingclasses, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :waitingclasses, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt28, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt28, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :morningsupervision, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :morningsupervision, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt29, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt29, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :schooltable, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :schooltable, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt30, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt30, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :attendancepercentage, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :attendancepercentage, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt31, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt31, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :writtenpreparation, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :writtenpreparation, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt32, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt32, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :ratingrecords, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :ratingrecords, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt33, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt33, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :activitiesbook, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :activitiesbook, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt34, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt34, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :editorialbusiness, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :editorialbusiness, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt35, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt35, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :visitingteachers, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :visitingteachers, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt36, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt36, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :teachingaidsusage, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :teachingaidsusage, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt37, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt37, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :commissionguidance, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :commissionguidance, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt38, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt38, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :enrichmentprogram, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :enrichmentprogram, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt39, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt39, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :schoolplan, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :schoolplan, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt40, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt40, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :trainingprograms, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :trainingprograms, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt41, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt41, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :techemploying, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :techemploying, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt42, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt42, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :richmentprogramdev, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :richmentprogramdev, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt43, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt43, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :teachingnewstrategy, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :teachingnewstrategy, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt44, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt44, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :learningresource, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :learningresource, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt45, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt45, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :headmasterpermission, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :headmasterpermission, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt46, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt46, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :creativeapproaches, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :creativeapproaches, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt47, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt47, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :schoolinitiative, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :schoolinitiative, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt48, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt48, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :achievementfile, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :achievementfile, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt49, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt49, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :examssystems, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :examssystems, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt50, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt50, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :achievementexams, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :achievementexams, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt51, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt51, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :studentsinawards, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :studentsinawards, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt52, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt52, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :studentsoutawards, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :studentsoutawards, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt53, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt53, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :safetycoordinator, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :safetycoordinator, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt54, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt54, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :teachertraining, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :teachertraining, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt55, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt55, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :buildingsafety, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :buildingsafety, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt56, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt56, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :evacuationexperment, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :evacuationexperment, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt57, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt57, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :fireextinguishers, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :fireextinguishers, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt58, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt58, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :emergencyexit, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :emergencyexit, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt59, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt59, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :alarm, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :alarm, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt60, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt60, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :safetymethods, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :safetymethods, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cmt61, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :cmt61, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :sum, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.number_field :sum, :class => 'text-field form-control' %>
+    </div>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <div class="form-group">
+    <div class='col-md-offset-2 col-md-10'>
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  primaries_path, :class => 'btn btn-default' %>
+    </div>
   </div>
 <% end %>

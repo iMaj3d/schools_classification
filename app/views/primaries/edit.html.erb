@@ -1,6 +1,5 @@
-<h1>Editing primary</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @primary %> |
-<%= link_to 'Back', primaries_path %>
+<%- model_class = Primary -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Primary %></h1>
+</div>
+<%= render :partial => 'form' %>
