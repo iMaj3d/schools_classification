@@ -1,6 +1,5 @@
-<h1>Editing intermediate</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @intermediate %> |
-<%= link_to 'Back', intermediates_path %>
+<%- model_class = Intermediate -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Intermediate %></h1>
+</div>
+<%= render :partial => 'form' %>
